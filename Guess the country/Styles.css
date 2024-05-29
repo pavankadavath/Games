@@ -19,14 +19,14 @@ body {
     max-width: 500px;
     padding: 20px;
     border: 2px solid black;
-    box-sizing: border-box; /* Ensure padding is included in the width */
+    box-sizing: border-box; 
 }
 
 .logo-container {
     width: 100%;
     max-width: 480px;
-    height: 300px; /* Fixed height for consistent size */
-    margin: 10px auto; /* Center the logo container */
+    height: 300px;
+    margin: 10px auto; 
     border-radius: 10px;
     display: flex;
     align-items: center;
@@ -37,19 +37,19 @@ body {
     max-height: 100%;
     max-width: 100%;
     border-radius: 10px;
-    object-fit: contain; /* Ensure the image scales correctly */
+    object-fit: contain; 
 }
 
 .options-container {
     display: flex;
-    flex-wrap: wrap; /* Allow buttons to wrap */
+    flex-wrap: wrap; 
     gap: 10px;
     padding: 10px;
-    justify-content: center; /* Center the buttons */
+    justify-content: center; 
 }
 
 .option {
-    flex: 1 1 calc(50% - 20px); /* 50% width minus gap */
+    flex: 1 1 calc(50% - 20px); 
     background: rgb(198, 229, 238);
     border-radius: 10px;
     border: none;
