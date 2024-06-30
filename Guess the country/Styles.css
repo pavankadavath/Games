@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -8,49 +9,57 @@ body {
     align-items: center;
     flex-direction: column;
     justify-content: center;
-    min-height: 100vh; 
-    background: rgb(238,174,202);
-    background: linear-gradient(90deg, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 99%);
+    min-height: 100vh;
+    background-color: #f4f4f4;
+    font-family: Arial, sans-serif;
 }
 
 .game-container {
-    border-radius: 10px;
     width: 100%;
     max-width: 500px;
     padding: 20px;
     border: 2px solid black;
-    box-sizing: border-box; 
+    box-sizing: border-box;
+    background-color: white;
+    border-radius: 10px;
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    text-align: center;
 }
 
 .logo-container {
     width: 100%;
     max-width: 480px;
     height: 300px;
-    margin: 10px auto; 
+    margin: 10px auto;
     border-radius: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: #fff;
 }
 
 .logo-container img {
     max-height: 100%;
     max-width: 100%;
     border-radius: 10px;
-    object-fit: contain; 
+    object-fit: contain;
 }
 
 .options-container {
     display: flex;
-    flex-wrap: wrap; 
+    flex-wrap: wrap;
     gap: 10px;
     padding: 10px;
-    justify-content: center; 
+    justify-content: center;
 }
 
 .option {
-    flex: 1 1 calc(50% - 20px); 
-    background: rgb(198, 229, 238);
+    flex: 1 1 calc(50% - 20px);
+    background: rgb(103, 103, 228);
     border-radius: 10px;
     border: none;
     text-align: center;
@@ -58,22 +67,24 @@ body {
     padding: 10px;
     cursor: pointer;
     transition: background 0.3s;
+    color: white;
 }
 
 .option:hover {
     background: #5a5ad3;
 }
 
-.result {
+#result {
     text-align: center;
-    font-weight: 400;
-    font-size: 24px;
+    font-weight: 300;
+    font-size: 26px;
     margin-top: 10px;
 }
 
 .new-game {
     display: flex;
     justify-content: center;
+    background: white;
     padding: 10px;
 }
 
@@ -82,7 +93,7 @@ body {
     background: #bce66d;
 }
 
-.start-game{
+.start-game {
     max-height: 40px;
     max-width: 90%;
     text-align: center;
@@ -92,13 +103,10 @@ body {
     padding: 6px;
     margin-top: 10px;
     background: greenyellow;
+    border: none;
 }
 
-#result {
-    font-weight: 300;
-    font-size: 26px;
-}
-
+/* Media Queries for Responsiveness */
 @media (max-width: 600px) {
     .option {
         flex: 1 1 100%; 
@@ -111,7 +119,7 @@ body {
         padding: 8px;
     }
 
-    .result {
+    #result {
         font-size: 22px;
     }
 }
